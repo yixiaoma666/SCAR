@@ -1,0 +1,32 @@
+{
+    "s_r": "real",
+    "input_path": "original_data/mice.csv",
+    "output_path": "new_dataset",
+    "output_filename": "mice_mix_sudden",
+    "streams" : [
+        {
+            "type": "s",
+            "size": 10000,
+            "distri_list": [1],
+            "ano_type": "mix",
+            "ano_list": [2, 3],
+            "ano_rate": 0.02
+        },
+        {
+            "type": "s",
+            "size": 10000,
+            "distri_list": [2],
+            "ano_type": "mix",
+            "ano_list": [1, 3],
+            "ano_rate": 0.02
+        },
+        {
+            "type": "s",
+            "size": 10000,
+            "distri_list": [3],
+            "ano_type": "mix",
+            "ano_list": [1, 2],
+            "ano_rate": 0.02
+        }
+    ]
+}

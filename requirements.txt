@@ -1,0 +1,11 @@
+hdf5storage==0.1.19
+numpy==1.22.0
+pandas==1.5.0
+pyod==1.0.9
+pysad==0.1.1
+scikit_learn==0.22
+scipy==1.7.3
+tensorflow==2.13.0
+tensorflow_intel==2.13.0
+torch==2.1.0+cu118
+tqdm==4.65.0

@@ -1,0 +1,74 @@
+{
+    "s_r": "real",
+    "input_path": "original_data/norm_long.csv",
+    "output_path": "stream_data",
+    "output_filename": "real_4",
+    "streams" : [
+        {
+            "type": "s",
+            "size": 2000,
+            "distri_list": [0],
+            "ano_type": "mix",
+            "ano_list": [1, 2],
+            "ano_rate": 0.01
+        },
+        {
+            "type": "s",
+            "size": 2000,
+            "distri_list": [3],
+            "ano_type": "mix",
+            "ano_list": [4, 5],
+            "ano_rate": 0.01
+        },
+        {
+            "type": "g",
+            "size": 1000,
+            "distri_list1": [3],
+            "distri_list2": [0],
+            "ano_type": "mix",
+            "ano_list": [4, 5],
+            "ano_rate": 0.01
+        },
+        {
+            "type": "s",
+            "size": 2000,
+            "distri_list": [0],
+            "ano_type": "mix",
+            "ano_list": [1, 2],
+            "ano_rate": 0.01
+        },
+        {
+            "type": "i",
+            "size": 1000,
+            "distri_list1": [0],
+            "distri_list2": [3],
+            "ano_type": "mix",
+            "ano_list": [4, 5],
+            "ano_rate": 0.01
+        },
+        {
+            "type": "s",
+            "size": 2000,
+            "distri_list": [3],
+            "ano_type": "mix",
+            "ano_list": [4, 5],
+            "ano_rate": 0.01
+        },
+        {
+            "type": "s",
+            "size": 2000,
+            "distri_list": [6, 9, 12],
+            "ano_type": "mix",
+            "ano_list": [7, 8, 10, 11, 13, 14],
+            "ano_rate": 0.01
+        },
+        {
+            "type": "s",
+            "size": 2000,
+            "distri_list": [15, 18, 21],
+            "ano_type": "mix",
+            "ano_list": [16, 17, 19, 20, 22, 23],
+            "ano_rate": 0.01
+        }
+    ]
+}

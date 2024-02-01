@@ -1,0 +1,33 @@
+{
+    "s_r": "real",
+    "input_path": "original_data/4d.csv",
+    "output_path": "stream_data",
+    "output_filename": "demo_real_mix",
+    "streams" : [
+        {
+            "type": "s",
+            "size": 5000,
+            "distri_list": [1, 2],
+            "ano_type": "mix",
+            "ano_list": [0],
+            "ano_rate": 0.02
+        },
+        {
+            "type": "g",
+            "size": 5000,
+            "distri_list1": [1, 2],
+            "distri_list2": [3, 4],
+            "ano_type": "mix",
+            "ano_list": [0],
+            "ano_rate": 0.02
+        },
+        {
+            "type": "s",
+            "size": 5000,
+            "distri_list": [3, 4],
+            "ano_type": "mix",
+            "ano_list": [1, 2],
+            "ano_rate": 0.02
+        }
+    ]
+}

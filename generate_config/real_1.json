@@ -1,0 +1,17 @@
+{
+    "s_r": "real",
+    "input_path": "original_data/breast.csv",
+    "output_path": "stream_data",
+    "output_filename": "real_1",
+    "streams" : [
+        {
+            "type": "s",
+            "size": 5000,
+            "distri_list": [1],
+            "ano_type": "shake",
+            "dim_rate": 0.5,
+            "ano_range_list": [[3, 6], [-5, -2]],
+            "ano_rate": 0.02
+        }
+    ]
+}

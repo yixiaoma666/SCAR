@@ -1,0 +1,24 @@
+[
+    {
+        "name": "IDKs",
+        "input path": "stream_data",
+        "input file": "demo_real_shake",
+        "output path": "result",
+        "argument":{
+            "psi": 8,
+            "t": 100,
+            "window_size": 100
+        }
+    },
+    {
+        "name": "INNEs",
+        "input path": "stream_data",
+        "input file": "demo_real_shake",
+        "output path": "result",
+        "argument":{
+            "psi": 8,
+            "t": 100,
+            "window_size": 100
+        }
+    }
+]

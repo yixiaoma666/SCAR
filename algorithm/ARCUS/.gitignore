@@ -1,0 +1,6 @@
+.vscode
+datasets/*.csv
+figures/
+*.pyc
+.ipynb_checkpoints/ARCUS-checkpoint.py
+.ipynb_checkpoints/test-checkpoint.ipynb

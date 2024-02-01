@@ -1,0 +1,32 @@
+{
+    "s_r": "real",
+    "input_path": "original_data/norm_2d_original.csv",
+    "output_path": "stream_data",
+    "output_filename": "real_2",
+    "streams" : [
+        {
+            "type": "s",
+            "size": 3000,
+            "distri_list": [1],
+            "ano_type": "mix",
+            "ano_list": [3, 4],
+            "ano_rate": 0.02
+        },
+        {
+            "type": "s",
+            "size": 3000,
+            "distri_list": [2],
+            "ano_type": "mix",
+            "ano_list": [5, 6],
+            "ano_rate": 0.02
+        },
+        {
+            "type": "s",
+            "size": 3000,
+            "distri_list": [1],
+            "ano_type": "mix",
+            "ano_list": [3, 4],
+            "ano_rate": 0.02
+        }
+    ]
+}

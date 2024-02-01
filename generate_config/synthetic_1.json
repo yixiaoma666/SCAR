@@ -1,0 +1,74 @@
+{
+    "s_r": "synthetic",
+    "output_path": "stream_data",
+    "output_filename": "synthetic_1",
+    "distri_list":
+        {
+            "d1":
+            {
+                "name": "norm",
+                "loc": 0,
+                "scale": 1
+            },
+            "d2":
+            {
+                "name": "norm",
+                "loc": 5,
+                "scale": 1
+            },
+            "d3":
+            {
+                "name": "norm",
+                "loc": -5,
+                "scale": 1
+            },
+            "a1":
+            {
+                "name": "norm",
+                "loc": 15,
+                "scale": 1
+            },
+            "a2":
+            {
+                "name": "norm",
+                "loc": -15,
+                "scale": 1
+            }
+        },
+    "streams":[
+        {
+            "type": "s",
+            "size": 500,
+            "distri_list": ["d1"],
+            "ano_type": "mix",
+            "ano_list": ["a1"],
+            "ano_rate": 0.02
+        },
+        {
+            "type": "s",
+            "size": 500,
+            "distri_list": ["d1", "d2"],
+            "ano_type": "mix",
+            "ano_list": ["a1", "a2"],
+            "ano_rate": 0.02
+        },
+        {
+            "type": "g",
+            "size": 500,
+            "distri_list1": ["d2"],
+            "distri_list2": ["d1"],
+            "ano_type": "mix",
+            "ano_list": ["a1"],
+            "ano_rate": 0.02
+        },
+        {
+            "type": "g",
+            "size": 500,
+            "distri_list1": ["d1"],
+            "distri_list2": ["d2", "d3"],
+            "ano_type": "mix",
+            "ano_list": ["a1"],
+            "ano_rate": 0.02
+        }
+    ]
+}

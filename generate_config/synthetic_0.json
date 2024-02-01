@@ -1,0 +1,240 @@
+{
+    "s_r": "synthetic",
+    "output_path": "stream_data",
+    "output_filename": "synthetic_0",
+    "distri_list":
+        {
+            "d1":
+            {
+                "name": "norm",
+                "loc": 0,
+                "scale": 1
+            },
+            "d2":
+            {
+                "name": "norm",
+                "loc": 0,
+                "scale": 5
+            },
+            "d3":
+            {
+                "name": "norm",
+                "loc": 5,
+                "scale": 1.2
+            },
+            "d4":
+            {
+                "name": "norm",
+                "loc": -5,
+                "scale": 1.2
+            },
+            "a1":
+            {
+                "name": "norm",
+                "loc": 9,
+                "scale": 1
+            },
+            "a2":
+            {
+                "name": "norm",
+                "loc": -9,
+                "scale": 1
+            },
+            "a3":
+            {
+                "name": "norm",
+                "loc": 21,
+                "scale": 1
+            },
+            "a4":
+            {
+                "name": "norm",
+                "loc": -21,
+                "scale": 1
+            },
+            "a5":
+            {
+                "name": "norm",
+                "loc": 0,
+                "scale": 0.5
+            }
+        },
+    "streams":[
+        {
+            "type": "s",
+            "size": 5000,
+            "distri_list": ["d1"],
+            "ano_type": "mix",
+            "ano_list": ["a1", "a2"],
+            "ano_rate": 0.004
+        },
+        {
+            "type": "s",
+            "size": 5000,
+            "distri_list": ["d2"],
+            "ano_type": "mix",
+            "ano_list": ["a3", "a4"],
+            "ano_rate": 0.001
+        },
+        {
+            "type": "s",
+            "size": 3500,
+            "distri_list": ["d1"],
+            "ano_type": "mix",
+            "ano_list": ["a1", "a2"],
+            "ano_rate": 0.004
+        },
+        {
+            "type": "g",
+            "size": 3000,
+            "distri_list1": ["d1"],
+            "distri_list2": ["d2"],
+            "ano_type": "mix",
+            "ano_list": ["a3", "a4"],
+            "ano_rate": 0.001
+        },
+        {
+            "type": "s",
+            "size": 3500,
+            "distri_list": ["d2"],
+            "ano_type": "mix",
+            "ano_list": ["a3", "a4"],
+            "ano_rate": 0.001
+        },
+        {
+            "type": "g",
+            "size": 3000,
+            "distri_list1": ["d2"],
+            "distri_list2": ["d1"],
+            "ano_type": "mix",
+            "ano_list": ["a3", "a4"],
+            "ano_rate": 0.001
+        },
+        {
+            "type": "s",
+            "size": 3500,
+            "distri_list": ["d1"],
+            "ano_type": "mix",
+            "ano_list": ["a1", "a2"],
+            "ano_rate": 0.004
+        },
+        {
+            "type": "i",
+            "size": 3000,
+            "distri_list1": ["d1"],
+            "distri_list2": ["d2"],
+            "ano_type": "mix",
+            "ano_list": ["a3", "a4"],
+            "ano_rate": 0.001
+        },
+        {
+            "type": "s",
+            "size": 3500,
+            "distri_list": ["d2"],
+            "ano_type": "mix",
+            "ano_list": ["a3", "a4"],
+            "ano_rate": 0.001
+        },
+        {
+            "type": "i",
+            "size": 3000,
+            "distri_list1": ["d2"],
+            "distri_list2": ["d1"],
+            "ano_type": "mix",
+            "ano_list": ["a3", "a4"],
+            "ano_rate": 0.001
+        },
+        {
+            "type": "s",
+            "size": 3500,
+            "distri_list": ["d1"],
+            "ano_type": "mix",
+            "ano_list": ["a1", "a2"],
+            "ano_rate": 0.004
+        },
+        {
+            "type": "s",
+            "size": 5000,
+            "distri_list": ["d3", "d4"],
+            "ano_type": "mix",
+            "ano_list": ["a5"],
+            "ano_rate": 0.003
+        },
+        {
+            "type": "s",
+            "size": 3500,
+            "distri_list": ["d1"],
+            "ano_type": "mix",
+            "ano_list": ["a1", "a2"],
+            "ano_rate": 0.004
+        },
+        {
+            "type": "g",
+            "size": 3000,
+            "distri_list1": ["d1"],
+            "distri_list2": ["d3", "d4"],
+            "ano_type": "mix",
+            "ano_list": ["a3", "a4"],
+            "ano_rate": 0.001
+        },
+        {
+            "type": "s",
+            "size": 3500,
+            "distri_list": ["d3", "d4"],
+            "ano_type": "mix",
+            "ano_list": ["a5"],
+            "ano_rate": 0.005
+        },
+        {
+            "type": "g",
+            "size": 3000,
+            "distri_list1": ["d3", "d4"],
+            "distri_list2": ["d1"],
+            "ano_type": "mix",
+            "ano_list": ["a3", "a4"],
+            "ano_rate": 0.001
+        },
+        {
+            "type": "s",
+            "size": 3500,
+            "distri_list": ["d1"],
+            "ano_type": "mix",
+            "ano_list": ["a1", "a2"],
+            "ano_rate": 0.004
+        },
+        {
+            "type": "i",
+            "size": 3000,
+            "distri_list1": ["d1"],
+            "distri_list2": ["d3", "d4"],
+            "ano_type": "mix",
+            "ano_list": ["a3", "a4"],
+            "ano_rate": 0.001
+        },
+        {
+            "type": "s",
+            "size": 3500,
+            "distri_list": ["d3", "d4"],
+            "ano_type": "mix",
+            "ano_list": ["a5"],
+            "ano_rate": 0.003
+        },
+        {
+            "type": "i",
+            "size": 3000,
+            "distri_list1": ["d3", "d4"],
+            "distri_list2": ["d1"],
+            "ano_type": "mix",
+            "ano_list": ["a3", "a4"],
+            "ano_rate": 0.001
+        },
+        {
+            "type": "s",
+            "size": 3500,
+            "distri_list": ["d1"],
+            "ano_type": "mix",
+            "ano_list": ["a1", "a2"],
+            "ano_rate": 0.002
+        }
+    ]
+}
