@@ -22,7 +22,7 @@ Configure the file in `.json`.
 
 `s_r` is the source of the base distribution, synthetic is using the distribution in `scipy.stats`, and real is using the clustered/classified dataset
 
-The `distri_list` is unique to synthetic, and is a collection of parameters used for distributions in streaming data, the parameters can be found [here](https://docs.scipy.org/doc/scipy/reference/stats.html#continuous- distributions)
+The `distri_list` is unique to synthetic, and is a collection of parameters used for distributions in streaming data, the parameters can be found [here](https://docs.scipy.org/doc/scipy/reference/stats.html#continuous-distributions)
 
 `input_path` is a parameter unique to real, it is the path to the dataset to be imported.
 
