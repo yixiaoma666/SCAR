@@ -1,0 +1,74 @@
+{
+    "s_r": "real",
+    "input_path": "original_data/lung.csv",
+    "output_path": "new_dataset",
+    "output_filename": "lung_shake_gradual",
+    "streams" : [
+        {
+            "type": "s",
+            "size": 10000,
+            "distri_list": [1],
+            "ano_type": "shake",
+            "dim_rate": 0.5,
+            "ano_range_list": [[-0.5, -0.2], [1.2, 1.5]],
+            "ano_rate": 0.02
+        },
+        {
+            "type": "g",
+            "size": 5000,
+            "distri_list1": [1],
+            "distri_list2": [2],
+            "ano_type": "shake",
+            "dim_rate": 0.5,
+            "ano_range_list": [[-0.5, -0.2], [1.2, 1.5]],
+            "ano_rate": 0.02
+        },
+        {
+            "type": "s",
+            "size": 10000,
+            "distri_list": [2],
+            "ano_type": "shake",
+            "dim_rate": 0.5,
+            "ano_range_list": [[-0.5, -0.2], [1.2, 1.5]],
+            "ano_rate": 0.02
+        },
+        {
+            "type": "g",
+            "size": 5000,
+            "distri_list1": [2],
+            "distri_list2": [1],
+            "ano_type": "shake",
+            "dim_rate": 0.5,
+            "ano_range_list": [[-0.5, -0.2], [1.2, 1.5]],
+            "ano_rate": 0.02
+        },
+        {
+            "type": "s",
+            "size": 10000,
+            "distri_list": [1],
+            "ano_type": "shake",
+            "dim_rate": 0.5,
+            "ano_range_list": [[-0.5, -0.2], [1.2, 1.5]],
+            "ano_rate": 0.02
+        },
+        {
+            "type": "g",
+            "size": 5000,
+            "distri_list1": [1],
+            "distri_list2": [2],
+            "ano_type": "shake",
+            "dim_rate": 0.5,
+            "ano_range_list": [[-0.5, -0.2], [1.2, 1.5]],
+            "ano_rate": 0.02
+        },
+        {
+            "type": "s",
+            "size": 10000,
+            "distri_list": [2],
+            "ano_type": "shake",
+            "dim_rate": 0.5,
+            "ano_range_list": [[-0.5, -0.2], [1.2, 1.5]],
+            "ano_rate": 0.02
+        }
+    ]
+}
