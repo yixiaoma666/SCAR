@@ -232,7 +232,7 @@ def print_info(output):
 def main():
     np.random.seed(0)
     parser = argparse.ArgumentParser()
-    parser.add_argument('--path', default='config/demo_r_s.json')
+    parser.add_argument('--path', default='generate_config')
     args = parser.parse_args()
     paths = args.path
     if paths.endswith('.json'):
@@ -258,6 +258,12 @@ def main():
                 output = np.concatenate(
                     (output, get_data_from_concept(concept, distri_dict)), axis=0)
         output[0, -1] = 0
+        if not os.path.exists(argument['output_path']):
+            os.makedirs(argument['output_path'])
+        if not os.path.exists(os.path.join(argument['output_path'], 'csv')):
+            os.makedirs(os.path.join(argument['output_path'], 'csv'))
+        if not os.path.exists(os.path.join(argument['output_path'], 'mat')):
+            os.makedirs(os.path.join(argument['output_path'], 'mat'))
         np.savetxt(os.path.join(argument['output_path'], 'csv', argument['output_filename']+'.csv'), output, delimiter=',')
         hdf5storage.savemat(os.path.join(argument['output_path'], 'mat', argument['output_filename']+'.mat'), {'Y': output[:, :-2], 'L': output[:, -2].reshape(-1, 1), 'C': output[:, -1].reshape(-1, 1)})
         print(f'Output stream data is in {argument["output_path"]}')
