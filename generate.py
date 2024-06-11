@@ -48,7 +48,7 @@ def get_data_from_concept(concept, distri_dict):
         data: np.ndarray = np.sum(data_array*weight, axis=0)
         label = np.zeros((np.shape(data)[0], 1))
         drift = np.zeros((np.shape(data)[0], 1))
-        if concept['ano_type'] == 'mix' and len(concept['ano_list']) != 0:
+        if concept['data_type'] == 'img' and len(concept['ano_list']) != 0:
             ano_data_list = []
             for each in concept['ano_list']:
                 ano_data_list.append(distri_dict[each](concept['size']))
@@ -71,15 +71,15 @@ def get_data_from_concept(concept, distri_dict):
 
             data = np.sum(all_data*mix_weight, axis=0)
             label[mix_index < concept['ano_rate']] = 1
-        elif concept['ano_type'] == 'shake':
+        elif concept['data_type'] == 'num':
             mm_list = np.concatenate((np.min(data, axis=0).reshape(1, -1), np.max(data, axis=0).reshape(1, -1)), axis=0)
             for _n in range(data.shape[0]):
                 if np.random.random() < concept['ano_rate']:
                     for _dim in range(data.shape[1]):
                         if np.random.random() < concept['dim_rate']:
                             ano_range = concept['ano_range_list'][np.random.choice(len(concept['ano_range_list']))]
-                            shake = (np.random.uniform(min(ano_range), max(ano_range)) - mm_list[0, _dim]) * (mm_list[1, _dim] - mm_list[0, _dim])
-                            data[_n, _dim] = shake
+                            num = (np.random.uniform(min(ano_range), max(ano_range)) - mm_list[0, _dim]) * (mm_list[1, _dim] - mm_list[0, _dim])
+                            data[_n, _dim] = num
                             label[_n, 0] = 1
         drift[0, 0] = 1
 
@@ -124,7 +124,7 @@ def get_data_from_concept(concept, distri_dict):
         label = np.zeros((np.shape(data)[0], 1))
         drift = np.zeros((np.shape(data)[0], 1))
 
-        if concept['ano_type'] == 'mix' and len(concept['ano_list']) != 0:
+        if concept['data_type'] == 'img' and len(concept['ano_list']) != 0:
             ano_data_list = []
             for each in concept['ano_list']:
                 ano_data_list.append(distri_dict[each](concept['size']))
@@ -191,7 +191,7 @@ def get_data_from_concept(concept, distri_dict):
         label = np.zeros((np.shape(data)[0], 1))
         drift = np.zeros((np.shape(data)[0], 1))
 
-        if concept['ano_type'] == 'mix' and len(concept['ano_list']) != 0:
+        if concept['data_type'] == 'img' and len(concept['ano_list']) != 0:
             ano_data_list = []
             for each in concept['ano_list']:
                 ano_data_list.append(distri_dict[each](concept['size']))

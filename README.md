@@ -40,9 +40,9 @@ When `type` is `g`, the segment has a data length of `size`, and the normal data
 
 When `type` is `i`, the length of the segment is `size`, and the normal data $X_1$, $X_2$ distributions are taken with equal probability from the distributions in `distri_list1` and `distri_list2`, and the mixing weight is noted as $weight=[0,\frac{1}{size},\frac{2}{size}. \frac{size-1}{size}]$, and the final data is $(1-weight)\cdot X_1+weight\cdot X_2$, with anomalous data taken with equal probability from the distribution in the `ano_list` and normal data replaced with probability at the `ano_rate`. The location of the anomaly data replacement is noted as 1 for the anomaly label and 1 for all drift labels in the segment.
 
-When `ano_type` is `shake`, outliers will be randomly sampled from a uniform distribution of `ano_range_list`, `dim_rate` is the proportion of dimensions modified, and `ano_rate` is the proportion of outliers.
+When `data_type` is `num`, outliers will be randomly sampled from a uniform distribution of `ano_range_list`, `dim_rate` is the proportion of dimensions modified, and `ano_rate` is the proportion of outliers.
 
-When `ano_type` is `mix`, outliers are sampled from the `ano_list` and inserted into the normal distribution in proportion to the `ano_rate`.
+When `data_type` is `img`, outliers are sampled from the `ano_list` and inserted into the normal distribution in proportion to the `ano_rate`.
 
 # Datasets
 

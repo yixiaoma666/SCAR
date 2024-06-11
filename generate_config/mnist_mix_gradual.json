@@ -8,7 +8,7 @@
             "type": "s",
             "size": 10000,
             "distri_list": [1],
-            "ano_type": "mix",
+            "data_type": "img",
             "ano_list": [2, 3],
             "ano_rate": 0.02
         },
@@ -17,7 +17,7 @@
             "size": 5000,
             "distri_list1": [1],
             "distri_list2": [2],
-            "ano_type": "mix",
+            "data_type": "img",
             "ano_list": [3],
             "ano_rate": 0.02
         },
@@ -25,7 +25,7 @@
             "type": "s",
             "size": 10000,
             "distri_list": [2],
-            "ano_type": "mix",
+            "data_type": "img",
             "ano_list": [1, 3],
             "ano_rate": 0.02
         },
@@ -33,7 +33,7 @@
             "type": "s",
             "size": 10000,
             "distri_list": [3],
-            "ano_type": "mix",
+            "data_type": "img",
             "ano_list": [1, 2],
             "ano_rate": 0.02
         }
