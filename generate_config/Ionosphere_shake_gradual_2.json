@@ -1,8 +1,8 @@
 {
     "s_r": "real",
-    "input_path": "original_data/control.csv",
+    "input_path": "original_data/Ionosphere.csv",
     "output_path": "new_dataset",
-    "output_filename": "control_shake_gradual_2",
+    "output_filename": "Ionosphere_shake_gradual_2",
     "streams" : [
         {
             "type": "s",

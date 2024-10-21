@@ -1,8 +1,8 @@
 {
     "s_r": "real",
-    "input_path": "original_data/user.csv",
+    "input_path": "original_data/WDBC.csv",
     "output_path": "new_dataset",
-    "output_filename": "user_shake_sudden_2",
+    "output_filename": "WDBC_shake_sudden_2",
     "streams" : [
         {
             "type": "s",

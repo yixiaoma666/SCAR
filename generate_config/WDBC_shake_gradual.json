@@ -1,8 +1,8 @@
 {
     "s_r": "real",
-    "input_path": "original_data/control.csv",
+    "input_path": "original_data/WDBC.csv",
     "output_path": "new_dataset",
-    "output_filename": "control_shake_gradual",
+    "output_filename": "WDBC_shake_gradual",
     "streams" : [
         {
             "type": "s",

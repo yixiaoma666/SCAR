@@ -1,8 +1,8 @@
 {
     "s_r": "real",
-    "input_path": "original_data/LandCover.csv",
+    "input_path": "original_data/WOBC.csv",
     "output_path": "new_dataset",
-    "output_filename": "LandCover_shake_sudden",
+    "output_filename": "WOBC_shake_sudden",
     "streams" : [
         {
             "type": "s",

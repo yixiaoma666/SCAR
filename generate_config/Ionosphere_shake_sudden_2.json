@@ -1,8 +1,8 @@
 {
     "s_r": "real",
-    "input_path": "original_data/Segment.csv",
+    "input_path": "original_data/Ionosphere.csv",
     "output_path": "new_dataset",
-    "output_filename": "Segment_shake_sudden_2",
+    "output_filename": "Ionosphere_shake_sudden_2",
     "streams" : [
         {
             "type": "s",
