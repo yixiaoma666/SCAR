@@ -46,7 +46,11 @@ When `data_type` is `img`, outliers are sampled from the `ano_list` and inserted
 
 # Datasets
 
-The dataset is available at [here](https://drive.google.com/drive/folders/1ac3qX7-Amq-zEgBQeWetR1ZE9CSkuAXB?usp=drive_link).
+The dataset is available at [here](https://drive.google.com/drive/folders/1ac3qX7-Amq-zEgBQeWetR1ZE9CSkuAXB?usp=drive_link). Or you can run
+
+```shell
+python generate.py
+```
 
 
 # Test Algorithms
